@@ -1,3 +1,7 @@
+/*
+This is a Java class, which is the main document we create.  In our class, a Class is the
+top of the food-chain in terms of hierarchy.
+ */
 public class Notes_1_2 {
     public static void main(String[] args){
 

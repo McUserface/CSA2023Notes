@@ -1,7 +1,7 @@
 public class VarIntro {
     public static void main(String[] args) {
         int myInteger = 53; // int must be lowercase and is declared without quotation marks, max value 2.1
-            bidouble myDouble = 10.7; // double is also lowercase and its value declared without quotes
+            //bidouble myDouble = 10.7; // double is also lowercase and its value declared without quotes
         boolean myBool = true; // boolean is also lowercase and its value is declared without quotes
         char myChar = 'x'; // char is also lowercase and is declared with apostrophes
         String myString = "wowie\nwow again but on a new line because of \"\\n\"";
