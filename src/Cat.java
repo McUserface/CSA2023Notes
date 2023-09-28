@@ -25,4 +25,10 @@ public class Cat {
     public void changeName(String newName){
         name = newName;
     }
+
+    public int ageInDogYears(){
+        System.out.println("before return");
+        return 7*age;
+    }
+
 }
