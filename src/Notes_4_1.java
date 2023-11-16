@@ -2,14 +2,10 @@ import java.util.Scanner;
 
 public class Notes_4_1 {
 
-    static Scanner scanny = new Scanner(System.in);
+    private static Scanner scanny = new Scanner(System.in);
     public static void main(String[] args){
 
-        int i = 8;
-        while (i >7) {
-            System.out.println("testing");
-            i--;
-        }
+        oneATime("Bob Q");
 
 
     }
@@ -47,6 +43,37 @@ public class Notes_4_1 {
 
     public static void addNums(int num){
 
+        // part 1 - num is my counter
+        int total = 0;
+        while(num > 0){ // part 2 is the test
+            total+= num;
+            num--; // part 3 - updating num
+        }
+        System.out.println(total);
+    }
+
+    public static void oneATime(String text){
+        int size = text.length();
+        int i = 0;
+        while (i < size){
+            char letter = text.charAt(i);
+            System.out.println(letter);
+            i++;
+        }
+    }
+
+    public static int pinCheck(int pin, int score){
+        int total = 0;
+        while(pin > 0){
+            int digit = pin % 10;
+            if(digit % 2 == 1){
+                total += 2* digit;
+            } else {
+                total += digit;
+            }
+            pin /= 10;
+        }
+        return total;
     }
 
 }
